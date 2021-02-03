@@ -108,7 +108,7 @@ def add_page(request, category_name_slug):
                 page = form.save(commit=False)
                 page.category = category
                 page.views = 0
-                page.likes = 0
+                #page.likes = 0
                 page.save()
 
                 return redirect(reverse('rango:show_category',
